@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>index</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="css/index.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="#"><span>Home</span></a>
+							</li>
+							<li class="active">Dashboard</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="alert alert-success umar-t">
+									<i class="fa fa-check"></i>
+									<span>此demo以bootstrap框架为基础，结合现在比较流行其他框架，完成这套模板。主要目的是将多种框架进行熟练运用。</span>
+									<i class="close-icon fa fa-close pull-right"></i>
+								</div>
+								<div class="row">
+									<div class="col-xs-6">
+										<div class="ibox">
+											<div class="ibox-title">主要内容</div>
+											<div class="ibox-content">
+												<p>该demo基于bootstrap框架，以学习为主要目的，主要将比较常用的UI样式进行整合，并且融合一些常用框架和插件进行的练习。</p>
+												<ul>
+													<li>主要内容包括：</li>
+													<li>1、jquery ui</li>
+													<li>2、echarts表格</li>
+													<li>3、基本的表格样式，使用jqgrid.js插件美化表格内容</li>
+													<li>4、form元素样式展示，并完成简单的提交功能，form项目向导图，使用Dropzone.js完成提交</li>
+													<li>5、具有拖拽功能的Calendar日历表</li>
+													<li>6、使用AngularJS框架模拟</li>
+													
+												</ul>
+											</div>
+										</div>
+										<div class="ibox umar-t">
+											<div class="ibox-title">联系方式：</div>
+											<div class="ibox-content">
+												<ul>
+													<li>
+														<i class="fa fa-qq"></i>
+														<span class="umar-l">QQ : <a>871096972</a></span>
+													</li>
+													<li>
+														<i class="fa fa-envelope"></i>
+														<span class="umar-l">Email : <a>zjm713830@sina.cn</a></span>
+													</li>
+																										
+												</ul>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="ibox">
+											<div class="ibox-title">更新内容：</div>
+											<div class="ibox-content">
+												<ul>
+													<li class="ibox-veision">
+														<span>v1.1</span>
+														<span class="pull-right umar-r fgrey">更新日期：2016-06-15</span>															
+													</li>
+													<li class="ibox-veision umar-t">
+														<span>v1.0</span>
+														<span class="pull-right umar-r fgrey">更新日期：2016-06-14</span>															
+													</li>	
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/public.js"></script>
+		<script>
+			$(function(){
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("index",0);//引入左侧导航
+				
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				
+			})
+		</script>
+		
+	</body>
+</html>
