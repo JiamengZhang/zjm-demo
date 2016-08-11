@@ -1,0 +1,21 @@
+{ 
+	"total": "5", 
+	"page": "2", 
+	"records": "3", 
+	"rows": [
+		{
+			"name":"Nana",
+			"age":"23",
+			"telephone":"15052126591",
+			"birthday":"93.08.30",
+			"QQ":"871096972",
+			"email":"zjm713830@sina.cn"
+		},{
+			"name":"Nana",
+			"age":"23",
+			"telephone":"15052126591",
+			"birthday":"93.08.30",
+			"QQ":"871096972",
+			"email":"zjm713830@sina.cn"
+		}]
+}

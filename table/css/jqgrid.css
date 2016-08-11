@@ -1,0 +1,49 @@
+.jqgridContainer{ color: #666666; border: solid 1px #E1E1E1;}
+	
+	.jqgridContainer .ui-jqgrid-hdiv{ border-bottom: solid 1px #E1E1E1;}
+	
+	.jqgridContainer .ui-jqgrid-hbox{ background-color: #F1F1F1;}
+		.jqgridContainer .ui-jqgrid-htable th{  background-color: #F1F1F1; color: #333333; line-height: 24px; font-weight: bold; border-right: solid 1px #E1E1E1; font-size: 14px; height: 32px;}
+		.jqgridContainer .ui-jqgrid-htable th:first-child{ font-size: 12px;}
+			.ui-jqgrid .ui-jqgrid-htable th div{ height: auto;}
+			
+	.jqgridContainer .ui-jqgrid-btable{ border: solid 1px #E1E1E1; border-top-width: 0; font-size: 12px;}	
+		.ui-jqgrid tr.jqgrow td{ height: 32px;}
+		.ui-jqgrid tr.jqgrow:nth-child(even){ background-color: white;}
+		.ui-jqgrid tr.jqgrow:nth-child(even) td{ border-left: solid 1px white;}
+		.ui-jqgrid tr.jqgrow:nth-child(odd){ background-color: #F8F8F8;}
+		.ui-jqgrid tr.jqgrow:nth-child(odd) td{ border-left: solid 1px #F8F8F8;}
+	.ui-jqgrid-btable .ui-widget-content.ui-state-highlight {background-color: #E4EFC9!important;}
+
+.ui-jqgrid .ui-icon-pencil{ color: #478FCA;}
+.ui-jqgrid .ui-icon-trash{ color: #DD5A43;}
+.ui-jqgrid .ui-icon-disk{ color: #69AA46;}
+.ui-jqgrid .ui-icon-cancel{ color: #DD5A43;}
+.ui-pg-div .ui-icon{ display: inline-block; width: 18px; float: none;;position: static; text-align: center; opacity: 0.85; transition: all 0.12s; margin: 0 1px; vertical-align: middle; cursor: pointer; font-size: 17px; text-indent: 0; right: 2px;}
+.ui-jqgrid .ui-icon-pencil:before { content: '\f040'; font-family: FontAwesome; display: inline;}
+.ui-jqgrid .ui-icon-trash:before { content: '\f014'; font-family: FontAwesome; display: inline;}
+.ui-jqgrid .ui-icon-disk:before { content: '\f00c'; font-family: FontAwesome; display: inline;}
+.ui-jqgrid .ui-icon-cancel:before { content: '\f00d'; font-family: FontAwesome; display: inline;}
+
+.jqgridContainer #grid-pager #pg_grid-pager{ padding: 1em 0; background-color: #F1F1F1;}
+.ui-jqgrid .ui-jqgrid-pager{ height: auto;}
+.jqgridContainer #pg_grid-pager > table { width: 100%; table-layout: fixed;}
+.jqgridContainer #pg_grid-pager > table #grid-pager_center{ width: 400px!important;}
+
+.jqgridContainer #pg_grid-pager .ui-icon{ font-size: 18px; border-radius: 100px; border: solid 1px #E1E1E1; background-color: white; display: inline-block; width: 24px; height: 24px; line-height: 22px; text-align: center; color: #999999;}
+.jqgridContainer #pg_grid-pager .ui-pg-input { height: 22px; width: 36px; border:solid 1px #E1E1E1; text-align: center; border-radius: .2em;}
+.jqgridContainer #pg_grid-pager select{ height: 24px; border-color: #E1E1E1; width: 56px;}
+.ui-jqgrid .ui-pg-button:hover{padding: 1px;}
+.ui-pg-button.ui-state-hover .ui-icon{ border-color: #478FCA!important; color: #478FCA!important;}
+.ui-pg-button.ui-state-disabled .ui-icon{ color: #DDDDDD!important;}
+
+.window-edit-parameter .tr{ text-align: right; font-weight: bold;}
+.window-edit-parameter .window{ width: 700px!important; margin-left: -350px!important;}
+
+.window-edit-parameter .infroshow tbody>tr{ border: solid 1px #E1E1E1;}
+.window-edit-parameter .infroshow tbody>tr>td{ border-right: solid 1px #E1E1E1; padding: .5em; font-size: 14px;}
+.window-edit-parameter .infroshow tbody>tr>td:not(.tr){ font-size: 12px;}
+.window-edit-parameter .infrochange .form-control{ height: 30px;}
+
+.window-edit-parameter .btnbox{ text-align: center; margin-top: 2em;}
+.window-edit-parameter .btnbox button:first-child{ margin-right: 1em; background-color: #DD5A43;}

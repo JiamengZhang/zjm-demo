@@ -1,0 +1,155 @@
+/* Simple table */
+.SimpleTable .table{
+	border: solid 1px #e1e1e1;
+}
+.SimpleTable .table > thead{
+	background-color: #F1F1F1;
+}
+.SimpleTable .table>thead>tr>th{
+	border: none;
+}
+.SimpleTable .table>thead>tr>th,
+.SimpleTable .table>tbody>tr>th{
+	border-left: solid 1px #e1e1e1;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+}
+.SimpleTable .table>thead>tr>th:first-child,
+.SimpleTable .table>tbody>tr>th:first-child{
+	width: 40px;
+}
+/*.SimpleTable .table>tbody>tr>th:last-child{
+	text-align: left;
+}*/
+.SimpleTable .table>thead>tr>th{	
+	font-weight: bold;
+}
+.SimpleTable .table>tbody>tr>th{	
+	font-family: "宋体";
+}
+
+
+.table >tbody >tr:nth-child(even){
+	background-color: #f9f9f9;
+}
+
+
+.table .table-icon{
+	cursor: pointer;
+	color: white;
+	width: 32px;
+	height: 24px;
+	display: inline-block;
+	border-radius: .2em;
+}
+.table .table-icon > i{
+	font-size: 16px;
+	vertical-align: middle;	
+}
+.table .table-icon.bg-delete{
+	margin-right: 10px;
+}
+.table .table-icon.bg-delete>i{
+	margin-left: -1px;
+	margin-top: -1px;
+}
+.table .table-icon.bg-edit>i{
+	margin-top: 0px;
+	margin-left: 1px;
+}
+
+/* dataTbale */
+.dataTable label{ font-weight: normal;}
+.dataTable .dataTables_size{ margin-left: 10px;}
+	.dataTable .dataTables_size > label >*{ display: inline-block; margin-right: 10px;}
+	.dataTable .dataTables_size .form-control{ width: auto;}
+.dataTable .dataTables_search{ text-align: right;}
+	.dataTable .dataTables_search >label >*{ display: inline-block; margin-right: 10px;}
+	.dataTable .dataTables_search .form-control{ width: auto;}
+
+.dataTable .table{ border: solid 1px #e1e1e1;}
+	.dataTable .table > thead{ background-color: #f1f1f1;}
+		.dataTable .table > thead >tr>td,
+		.dataTable .table > tbody >tr>td{ border-right: solid 1px #e1e1e1; text-align: center; line-height: 24px; font-size: 14px;}
+		.dataTable .table > tbody >tr>td{ font-family: '宋体';}
+		
+
+/* jquery dataTables */
+.jqdataTable .dataTables_length{ margin-bottom: 16px;}
+	.jqdataTable .dataTables_length>label{ margin-left: 10px;}
+		.jqdataTable .dataTables_length select{ margin: 0 10px;}
+		.jqdataTable .dataTables_length .form-control{ display: inline-block; width: auto;}
+		
+		.jqdataTable .dataTables_filter input{ margin: 0 10px;}
+		.jqdataTable .dataTables_filter .form-control{ display: inline-block; width: auto;}
+
+.jqdataTable table{ border: solid 1px #e1e1e1; border-left-width: 0;}
+	.jqdataTable table > thead{ background-color: #f1f1f1;}
+		.jqdataTable table > thead th{ border-left: solid 1px #e1e1e1; border-bottom: none; text-align: center;}
+	.jqdataTable table > tbody{ }
+		.jqdataTable table > tbody tr{ background-color: white;}
+		.jqdataTable table > tbody tr:nth-child(even){ background-color: #f9f9f9;}
+			.jqdataTable table > tbody tr >td{ border-top: solid 1px #e1e1e1; border-left: solid 1px #e1e1e1; font-family: '宋体'; text-align: center;}
+			.jqdataTable table > tbody tr td.sorting_1{ background-color: inherit;}
+
+table.dataTable.no-footer{ border-bottom: solid 1px #E1E1E1;}
+
+.jqdataTable table .table-icon{
+	cursor: pointer;
+	color: white;
+	width: 32px;
+	height: 24px;
+	display: inline-block;
+	border-radius: .2em;
+}
+.jqdataTable table .table-icon > i{
+	font-size: 16px;
+	vertical-align: middle;	
+}
+.jqdataTable table .table-icon.bg-delete{
+	margin-right: 10px;
+}
+.jqdataTable table .table-icon.bg-delete>i{
+	margin-left: 0px;
+	margin-top: 2px;
+}
+.jqdataTable table .table-icon.bg-edit>i{
+	margin-top: 2px;
+	margin-left: 1px;
+}
+
+.jqdataTable .dataTables_info{ margin: 10px 0 10px 10px;}
+.jqdataTable .dataTables_paginate{ margin: 10px 0;}
+
+.jqdataTable .dataTables_paginate .paginate_button{ 
+	border: solid 1px #e1e1e1; 
+	background-color: white; 
+	border-radius: .2em; 
+	color: #666666;
+}
+.dataTables_wrapper .dataTables_paginate .paginate_button.disabled,
+ .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:hover,
+  .dataTables_wrapper .dataTables_paginate .paginate_button.disabled:active{
+  	border-color: #e1e1e1;
+  	color: #CCCCCC!important;
+  }
+
+.dataTables_wrapper .dataTables_paginate .paginate_button.current,
+ .dataTables_wrapper .dataTables_paginate .paginate_button.current:hover{
+ 	color: white!important;
+ 	border: solid 1px #438eb9;
+ 	background: none;
+ 	background-color: #438eb9;
+ 	
+ }
+ 
+.dataTables_wrapper .dataTables_paginate .paginate_button:hover{
+	color: white!important;
+ 	border: solid 1px #6fb3e0;
+ 	background: none;
+ 	background-color: #6fb3e0;
+}
+
+
+
