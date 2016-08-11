@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1" user-scalable="no">
+		<title>ECharts</title>
+		<link rel="stylesheet" href="jqueryui/jquery-ui.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="echarts/css/echarts.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">Echarts</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-xs-6">
+										<div class="module1">
+											<div class="title">
+												<i class="fa fa-bar-chart"></i>
+												<span class="fF lighter">Line&Bar折线图&柱状图</span>
+											</div>
+											<div class="umar-t" id="echartsBar" style="height:400px;"></div>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="module2">
+											<div class="title">
+												<i class="fa fa-pie-chart"></i>
+												<span class="fF lighter">Pie饼图</span>
+											</div>
+											<div class="umar-t" id="echartsPie" style="height:400px;"></div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-6">
+										<div class="module1">
+											<div class="title">
+												<i class="fa fa-map-marker"></i>
+												<span class="fF lighter">Map地图</span>
+											</div>
+											<div class="umar-t" id="echartsMap" style="height:400px;"></div>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<div class="module2">
+											<div class="title">
+												<i class="fa fa-yelp"></i>
+												<span class="fF lighter">Scatter散点图</span>
+											</div>
+											<div class="umar-t" id="echartsScatter" style="height:400px;"></div>
+										</div>
+									</div>
+								</div>
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		
+		</div>
+		
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="jqueryui/jquery-ui.min.js"></script>
+		<script src="echarts/echartsjs/echarts.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="echarts/js/main.js"></script>
+		<script>
+			$(function(){
+				sidebarHeight();//控制侧导航的高度
+				
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("echarts",0);//引入左侧导航
+				
+				//折线图和柱状图显示
+				echartsBarShow();
+				
+				//饼图显示
+				echartsPieShow();
+				
+				//地图显示
+				echartsMapShow();
+				
+				//散点图显示
+				echartsScatterShow();
+			})
+		</script>		
+	</body>
+</html>

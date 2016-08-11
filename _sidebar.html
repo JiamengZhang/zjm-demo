@@ -1,0 +1,100 @@
+				<ul class="nav nav-list">
+					<li data-html = "index">
+						<a href="index.html">
+							<i class="nav-icon fa fa-tachometer"></i>
+							<span class="menu-text">Dashboard</span>
+						</a>
+					</li>
+					<li data-html = "jqueryui">
+						<a href="jqueryui.html">
+							<i class="nav-icon fa fa-magnet"></i>
+							<span class="menu-text">Jquery UI</span>							
+						</a>
+					</li>
+					<li data-html = "echarts">
+						<a href="echarts.html">
+							<i class="nav-icon fa fa-line-chart"></i>
+							<span class="menu-text">echarts</span>
+						</a>
+					</li>
+					<li data-html = "table" data-blean="true">
+						<a>
+							<i class="nav-icon fa fa-th-large"></i>
+							<span class="menu-text">table</span>
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+						<ul class="submenu">
+							<li data-html = "Simple">
+								<a href="Simple&DataTables.html">
+									<i class="subnav-icon fa fa-caret-right"></i>
+									<span>Simple & DataTables</span>
+								</a>
+							</li>
+							<li data-html = "jqGrid">
+								<a href="jqGrid.html">
+									<i class="subnav-icon fa fa-caret-right"></i>
+									<span>jqGrid</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<li data-html = "form"  data-blean="true">
+						<a>
+							<i class="nav-icon fa fa-cloud-upload"></i>
+							<span class="menu-text">form</span>
+							<b class="arrow fa fa-angle-down"></b>
+						</a>
+						<ul class="submenu">
+							<li data-html = "formElement">
+								<a href="formElement.html">
+									<i class="subnav-icon fa fa-caret-right"></i>
+									<span>Form Element</span>
+								</a>
+							</li>
+							<li data-html = "formWizard">
+								<a href="formWizard.html">
+									<i class="subnav-icon fa fa-caret-right"></i>
+									<span>Form Wizard</span>
+								</a>
+							</li>
+							<li data-html = "formEditor">
+								<a href="formEditor.html">
+									<i class="subnav-icon fa fa-caret-right"></i>
+									<span>Markdown Editor</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+					<!--<li data-html = "AngularJs">
+						<a href="#">
+							<i class="nav-icon fa fa-adn"></i>
+							<span class="menu-text">AngularJs</span>
+						</a>
+					</li>-->
+				</ul>
+				
+<script type="text/javascript">
+	$(function(){
+		$("#sidebar > ul > li").on("click",function(){
+			//转变箭头的方向
+			if ($(this).attr("data-blean") == "true") {
+				$(this).find("b").css({
+	                "-webkit-transform" : "rotateX(180deg)"
+	            });
+	            $(this).attr("data-blean", "false");
+	        } else {
+	            $(this).find("b").css({
+	                "-webkit-transform" : "rotateX(0deg)"
+	            });
+	            $(this).attr("data-blean", "true");
+	        }
+	        
+			$(this).find(".submenu").slideToggle("fast");			
+			$(".submenu").on("click",function(){
+				event.stopPropagation();//阻止冒泡时间
+			})
+		})
+	})
+	
+	
+</script>

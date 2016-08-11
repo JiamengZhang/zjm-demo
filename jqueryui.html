@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Jquery UI</title>
+		<link rel="stylesheet" href="jqueryui/jquery-ui.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="jqueryui/css/jqueryui.css" />
+		<link rel="stylesheet" type="text/css" href="jqueryui/css/draggable.css" />
+		
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">Jquery UI</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="title">
+											<i class="fa fa-comments-o"></i>
+											<span class="fF lighter">Draggable&Droppable拖拽效果</span>
+										</div>
+										<div class="draggableContent umar-t">
+											<div class="draggableList pull-left">
+												<div class="accordion">
+													<h3>section1</h3>
+													<ul>
+														<li class="draggableListItem">item1</li>
+														<li class="draggableListItem">item2</li>
+														<li class="draggableListItem">item3</li>
+														<li class="draggableListItem">item4</li>
+													</ul>
+													<h3>section2</h3>
+													<ul>
+														<li class="draggableListItem2">item1</li>
+														<li class="draggableListItem2">item2</li>
+														<li class="draggableListItem2">item3</li>
+														<li class="draggableListItem2">item4</li>
+													</ul>
+												</div>
+												
+											</div>
+											<div class="draggableContentBox pull-left">
+												<ul class="draggableContentTitle">
+													<li>
+														<span>第一部分</span>
+														<div class="form-control" id="draggableFirst">
+															<ul></ul>
+														</div>
+													</li>
+													<li>
+														<span>第二部分</span>
+														<div class="form-control" id="draggableSecond">
+															<ul></ul>
+														</div>
+													</li>
+												</ul>
+												<div class="draggableContentMain umar-t" id="draggableContentMain"> 
+													<ul>
+														<li>
+															<!--<div class="draggableItem">
+																<i class="fa fa-calendar-o"></i>
+																<span>item1</span>
+																<b class="fa fa-close closebtn"></b>
+															</div>
+															<div class="draggableItemContent">这是item1部分的内容</div>-->
+														</li>
+													</ul>
+												</div>
+											</div>
+											
+										</div>
+									</div>
+								</div>
+								<div class="space-12"></div>
+								<div class="row">
+									<div class="col-xs-6">
+										<!--日期选择器-->
+										<div class="calendarChoose">
+											<div class="title">
+												<i class="fa fa-calendar-o"></i>
+												<span class="fF lighter">Datepicker日期选择器</span>
+											</div>
+											<div class="calendarChooseContent umar-t">
+												<span>日期：</span>
+												<input type="text" id="datepicker" title="日期点击可以选择">
+											</div>									
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<!--菜单-->
+										<div class="menuBox">
+											<div class="title">
+												<i class="fa fa-bars"></i>
+												<span class="fF lighter">Menu菜单</span>
+											</div>
+											<ul id="menu" class="umar-t">
+											  	<li>Item 1</li>
+												<li>Item 2</li>
+												<li>Item 3
+													<ul>
+														<li>Item 3-1</li>
+														<li>Item 3-2</li>
+														<li>Item 3-3</li>
+														<li>Item 3-4</li>
+														<li>Item 3-5</li>
+													</ul>
+												</li>
+												<li>Item 4</li>
+												<li>Item 5</li>
+											</ul> 
+										</div>										
+									</div>									
+								</div>
+								<div class="space-12"></div>
+								<div class="row">
+									<div class="col-xs-6">
+										<!--折叠面板-->
+										<div class="accordionBox">
+											<div class="title">
+												<i class="fa fa-list"></i>
+												<span class="fF lighter">Accordion折叠面板</span>
+											</div>
+											<div class="accordionContent umar-t">
+												<div class="accordion" id="accordion">
+													<h3>Setion1</h3>
+													<div>这是第一部分的内容。</div>
+													<h3>Setion2</h3>
+													<div>这是第二部分的内容。</div>
+													<h3>Setion3</h3>
+													<div>这是第三部分的内容。</div>
+												</div>
+											</div>									
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<!--标签页-->
+										<div class="tabsBox">
+											<div class="title">
+												<i class="fa fa-folder-o"></i>
+												<span class="fF lighter">Tabs标签页</span>
+											</div>
+											<div class="tabsContent umar-t">
+												<div id="tabs">
+													<ul>
+														<li><a href="#tabs-1">选项卡一</a></li>
+														<li><a href="#tabs-2">选项卡二</a></li>
+														<li><a href="#tabs-3">选项卡三</a></li>
+													</ul>
+													<div id="tabs-1">这是选项卡一里面的内容。</div>
+													<div id="tabs-2">这是选项卡二里面的内容。</div>
+													<div id="tabs-3">这是选项卡三里面的内容。</div>
+												</div>
+											</div>									
+										</div>										
+									</div>
+								</div>
+								<div class="space-12"></div>
+								<div class="row">
+									<div class="col-xs-6">
+										<!--对话框-->
+										<div class="dialogsBox">
+											<div class="title">
+												<i class="fa fa-comments-o"></i>
+												<span class="fF lighter">Dialogs对话框</span>
+											</div>
+											<div class="dialogsContent umar-t">
+												<div id="users-contain" class="ui-widget">
+												    <table id="users" class="ui-widget ui-widget-content">
+												    	<thead>
+												      		<tr class="ui-widget-header">
+												        		<th>名字</th>
+												        		<th>邮箱</th>
+												        		<th>密码</th>
+												      		</tr>
+												    	</thead>
+												    	<tbody>
+												      		<tr>
+												        		<td>John Doe</td>
+												        		<td>john.doe@example.com</td>
+												        		<td>johndoe1</td>
+												      		</tr>
+												    	</tbody>
+												 	</table>
+												</div>
+												<button id="create-user">创建新用户</button>
+											</div>
+											<div id="dialog-form" title="创建新用户">
+												<p class="validateTips">所有的表单字段都是必填的。</p>
+											 
+												<form>
+											  		<fieldset>
+											    		<label for="name">名字</label>
+											    		<input type="text" name="name" id="name" class="text ui-widget-content ui-corner-all">
+											    		<label for="email">邮箱</label>
+											    		<input type="text" name="email" id="email" value="" class="text ui-widget-content ui-corner-all">
+											    		<label for="password">密码</label>
+											    		<input type="password" name="password" id="password" value="" class="text ui-widget-content ui-corner-all">
+											  		</fieldset>
+											  	</form>
+											</div>
+										</div>
+									</div>
+									<div class="col-xs-6">
+										<!--Spinner旋转器-->
+										<div class="spinnerBox">
+											<div class="title">
+												<i class="fa fa-retweet"></i>
+												<span class="fF lighter">Spinner旋转器</span>
+											</div>
+											<div class="spinnerContent umar-t">
+												<div class="spinnerInput">
+													<label for="spinner">请选择一个值：</label>
+													<input id="spinner" name="value" />
+												</div>
+												<button id="disable">切换禁用/启用</button>
+												<button id="destroy">切换部件</button>
+												<button id="getvalue">获取值</button>
+												<button id="setvalue">设置值为5</button>
+											</div>
+										</div>
+									</div>
+								</div>
+								
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="jqueryui/jquery-ui.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="jqueryui/js/main.js"></script>
+		<script src="jqueryui/js/draggable.js"></script>
+		<script>
+			$(function(){
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				
+				$("button").button();//按钮效果
+				
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("jqueryui",0);//引入左侧导航
+				
+				
+				//dialog对话框创建一个用户
+				var name = $("#name"),
+					email = $("#email"),
+    				password = $("#password"),
+    				allFields = $([]).add(name).add(email).add(password),
+    				tips = $(".validateTips");
+    				
+				$("#dialog-form").dialog({
+    				autoOpen: false,
+    				height: 300,
+				    width: 350,
+				    modal: true,
+				    buttons: {
+				        "创建一个帐户": function() {
+				          	var bValid = true;
+				          	allFields.removeClass("ui-state-error");
+				 
+				          	bValid = checkLength( name, "username", 3, 16 );
+				          	bValid = checkLength( email, "email", 6, 80 );
+				          	bValid = checkLength( password, "password", 5, 16 );
+				 
+				          	bValid = checkRegexp( name, /^[a-z]([0-9a-z_])+$/i, "用户名必须由 a-z、0-9、下划线组成，且必须以字母开头。" );
+				          	bValid = checkRegexp( email, /^((([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+(\.([a-z]|\d|[!#\$%&'\*\+\-\/=\?\^_`{\|}~]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])+)*)|((\x22)((((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(([\x01-\x08\x0b\x0c\x0e-\x1f\x7f]|\x21|[\x23-\x5b]|[\x5d-\x7e]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(\\([\x01-\x09\x0b\x0c\x0d-\x7f]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF]))))*(((\x20|\x09)*(\x0d\x0a))?(\x20|\x09)+)?(\x22)))@((([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|\d|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.)+(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])|(([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])([a-z]|\d|-|\.|_|~|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])*([a-z]|[\u00A0-\uD7FF\uF900-\uFDCF\uFDF0-\uFFEF])))\.?$/i, "eg. ui@jquery.com" );
+				          	bValid = checkRegexp( password, /^([0-9a-zA-Z])+$/, "密码字段只允许： a-z 0-9" );
+				 
+				          	if ( bValid ) {
+				            	$("#users tbody").append( "<tr>" +
+				              		"<td>" + name.val() + "</td>" +
+				              		"<td>" + email.val() + "</td>" +
+				              		"<td>" + password.val() + "</td>" +
+				            		"</tr>");
+				            	$(this).dialog("close");
+				          	}
+				        },
+				        Cancel: function() {
+				          	$(this).dialog("close");
+				        }
+					},
+					close: function() {
+				        allFields.val("").removeClass("ui-state-error");
+					}
+				});
+				
+				
+			})	
+				
+		</script>
+		
+	</body>
+</html>

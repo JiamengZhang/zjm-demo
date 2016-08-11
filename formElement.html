@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Element</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="form/css/formElement.css" />
+		<link rel="stylesheet" type="text/css" href="form/css/pop.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">Form</li>
+							<li class="active">Form Element</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="title">
+									<i class="fa fa-file-text-o"></i>
+									<span class="fF lighter">Form Element 表单元素</span>
+								</div>
+								<div class="module umar-t">
+									<div class="container">
+										<div class="row">
+											<div class="col-xs-12">
+												<form class="form-horizontal" role="form">
+													<div class="form-group">
+														<label class="col-xs-2 control-label">选择框：</label>
+														<div class="col-xs-8">
+															<select class="form-control">
+																<option value=""></option>
+																<option value="1">1</option>
+															</select>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-2 control-label">输入框：</label>
+														<div class="col-xs-8">
+															<input type="text" placeholder="请输入..." class="col-xs-12 form-control" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-2 control-label">单选框：</label>
+														<div class="col-xs-8">
+															<span class="radio">
+																<label>
+																	<input name="form-field-radio" type="radio" class="ace">
+																	<span class="lbl">选项一</span>
+																</label>
+															</span>
+															<span class="radio">
+																<label>
+																	<input name="form-field-radio" type="radio" class="ace">
+																	<span class="lbl">选项二</span>
+																</label>
+															</span>
+															<span class="radio">
+																<label>
+																	<input name="form-field-radio" type="radio" class="ace">
+																	<span class="lbl">选项三</span>
+																</label>
+															</span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-2 control-label">复选框：</label>
+														<div class="col-xs-8">
+															<span class="checkbox">
+																<label>
+																	<input name="form-field-checkbox" type="checkbox" class="ace">
+																	<span class="lbl">选项一</span>
+																</label>
+															</span>
+															<span class="checkbox">
+																<label>
+																	<input name="form-field-checkbox" type="checkbox" class="ace">
+																	<span class="lbl">选项二</span>
+																</label>
+															</span>
+															<span class="checkbox">
+																<label>
+																	<input name="form-field-checkbox" type="checkbox" class="ace">
+																	<span class="lbl">选项三</span>
+																</label>
+															</span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-2 control-label">描述框：</label>
+														<div class="col-xs-8">
+															<textarea class="col-xs-12 form-control"></textarea>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-2 control-label">表格数据：</label>
+														<div class="col-xs-8">
+															<div class="tableBox">
+																<div class="tableTitle">
+																	<table class="table">
+																		<thead>
+																			<tr>
+																				<th>名称</th>
+																				<th>序列</th>
+																				<th>类型</th>
+																				<th>别名</th>
+																				<th>是否可见</th>
+																			</tr>
+																		</thead>
+																	</table>
+																</div>
+																<div class="tableBody">
+																	<table class="table">
+																		<tbody>
+																			<tr>
+																				<td>1-A</td>
+																				<td>2-A</td>
+																				<td>3-A</td>
+																				<td>
+																					<input type="text" class="form-control" />
+																				</td>
+																				<td>
+																					<label>
+																						<input type="checkbox" class="ace" />
+																						<span class="lbl"></span>
+																					</label>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>1-B</td>
+																				<td>2-B</td>
+																				<td>3-B</td>
+																				<td>
+																					<input type="text" class="form-control" />
+																				</td>
+																				<td>
+																					<label>
+																						<input type="checkbox" class="ace" />
+																						<span class="lbl"></span>
+																					</label>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>1-C</td>
+																				<td>2-C</td>
+																				<td>3-C</td>
+																				<td>
+																					<input type="text" class="form-control" />
+																				</td>
+																				<td>
+																					<label>
+																						<input type="checkbox" class="ace" />
+																						<span class="lbl"></span>
+																					</label>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>1-A</td>
+																				<td>2-A</td>
+																				<td>3-A</td>
+																				<td>
+																					<input type="text" class="form-control" />
+																				</td>
+																				<td>
+																					<label>
+																						<input type="checkbox" class="ace" />
+																						<span class="lbl"></span>
+																					</label>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>1-D</td>
+																				<td>2-D</td>
+																				<td>3-D</td>
+																				<td>
+																					<input type="text" class="form-control" />
+																				</td>
+																				<td>
+																					<label>
+																						<input type="checkbox" class="ace" />
+																						<span class="lbl"></span>
+																					</label>
+																				</td>
+																			</tr>
+																			<tr>
+																				<td>1-E</td>
+																				<td>2-E</td>
+																				<td>3-E</td>
+																				<td>
+																					<input type="text" class="form-control" />
+																				</td>
+																				<td>
+																					<label>
+																						<input type="checkbox" class="ace" />
+																						<span class="lbl"></span>
+																					</label>
+																				</td>
+																			</tr>													
+																		</tbody>
+																	</table>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="form-actions">
+														<div class="col-xs-12">
+															<div class="btnBox">
+																<div class="form-btn formDel">取消</div>
+																<div class="form-btn formPreview">预览</div>
+																<div class="form-btn formSave">保存</div>
+															</div>
+														</div>
+													</div>
+												</form>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		<!--添加参数设置弹窗-->
+		<div class="window-edit-parameter">
+			<div class="window boxR bs">
+				<button class="fa fa-remove tra-fast btn-close"></button>
+				<div class="title">
+					组件展示预览
+				</div>
+				<div class=" tableadd">			
+					<ul class="td">
+						<li class="uinn-tb">
+							<label>
+								<input type="radio" value="主单" checked="checked" name="chose" class="ace">
+								<span class="lbl">选项一</span>
+							</label>
+						</li>
+						<li class="uinn-tb">
+							<label>
+								<input type="radio" value="子单"  name="chose" class="ace">
+								<span class="lbl">选项二</span>
+							</label>
+						</li>
+						<li class="uinn-tb">
+							<label>
+								<input type="radio" value="回单"  name="chose" class="ace">
+								<span class="lbl">选项三</span>
+							</label>
+						</li>
+					</ul>
+				</div>			
+			</div>
+		</div>
+		<!--修改参数设置弹窗end-->
+		
+		
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="form/js/pop.js"></script>
+		<script src="form/js/form.js"></script>
+		<script>
+			$(function(){	
+				$(".window-edit-parameter").on("click",".btn-yes",function(){//创建
+					windowHide($(".window-edit-parameter"));
+				});
+				$(".window-edit-parameter").on("click",".btn-cancle",function(){//取消
+					windowHide($(".window-edit-parameter"));
+				});
+				$(".formPreview").on("click",function(){				
+					windowShow($(".window-edit-parameter"));
+					$(".chosen-container").css({'width':'100%'});
+				})
+				
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("form","formElement");//引入左侧导航
+				
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				
+			})
+		</script>
+	</body>
+</html>

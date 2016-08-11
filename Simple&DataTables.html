@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Simple&DataTables</title>
+		<link rel="stylesheet" href="jqueryui/jquery-ui.css" />
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="table/css/jquery.dataTables.css" />
+		<link rel="stylesheet" type="text/css" href="table/css/table.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">table</li>
+							<li class="active">Simple & DataTables</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="SimpleTable">
+											<div class="title">
+												<i class="fa fa-table"></i>
+												<span class="fF lighter">Simple Table简单表格制作</span>
+											</div>
+											<table class="table umar-t" id="simpleTable">
+												<thead>
+													<tr>
+														<th></th>
+														<th>姓名</th>
+														<th>年龄</th>
+														<th>手机</th>
+														<th>生日</th>
+														<th>QQ</th>
+														<th>邮件</th>
+														<th>操作</th>
+													</tr>
+												</thead>
+												<tbody>
+													<!--<tr>
+														<th>1</th>
+														<th>张小妹</th>
+														<th>23</th>
+														<th>15052126591</th>
+														<th>93.08.30</th>
+														<th>871096972</th>
+														<th>zjm713830@sina.cn</th>
+														<th>
+															<span class="table-icon bg-delete">
+																<i class="fa fa-trash"></i>
+															</span>
+															<span class="table-icon bg-edit">
+																<i class="fa fa-edit"></i>
+															</span>													
+														</th>
+													</tr>-->
+												</tbody>
+											</table>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="dataTableBox">
+											<div class="title">
+												<i class="fa fa-table"></i>
+												<span class="fF lighter">DataTables</span>
+											</div>
+											<div class="dataTable umar-t">
+												<div class="row">
+													<div class="col-xs-6">
+														<div class="dataTables_size">
+															<label>
+																<span>每页显示</span>
+																<select id="showRecords" class="form-control input-sm">
+																	<option value="5">5</option>
+																	<option value="10">10</option>
+																	<option value="15">15</option>
+																</select>
+																<span>条数据</span>
+															</label>
+														</div>
+													</div>
+													<div class="col-xs-6">
+														<div class="dataTables_search">
+															<label>
+																<span>搜索：</span>
+																<input type="search" class="form-control input-sm" />
+															</label>
+														</div>
+													</div>
+												</div>
+												<table class="table umar-t" id="dataTable">
+													<thead>
+														<tr>
+															<td>
+																<label>
+																	<input type="checkbox" class="ace" />
+																	<div class="lbl"></div>
+																</label>
+															</td>
+															<td>姓名</td>
+															<td>年龄</td>
+															<td>手机</td>
+															<td>生日</td>
+															<td>QQ</td>
+															<td>邮箱</td>
+															<td>操作</td>
+														</tr>
+													</thead>
+													<tbody>
+														<!--<tr>
+															<td>
+																<label>
+																	<input type="checkbox" class="ace" />
+																	<div class="lbl"></div>
+																</label>
+															</td>
+															<td>Andy</td>
+															<td>23</td>
+															<td>15052126591</td>
+															<td>93.08.30</td>
+															<td>871096972</td>
+															<td>zjm713830@sina.cn</td>
+															<td>
+																<span class="table-icon bg-delete">
+																	<i class="fa fa-trash"></i>
+																</span><span class="table-icon bg-edit">
+																	<i class="fa fa-edit"></i>
+																</span>	
+															</td>
+														</tr>-->
+													</tbody>
+												</table>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<div class="dataTableBox">
+											<div class="title">
+												<i class="fa fa-table"></i>
+												<span class="fF lighter">Jquery DataTables</span>
+											</div>
+											<div class="jqdataTable umar-t">
+												<table id="table_id" style="width: 100%;">
+										            <thead>
+										                <tr>
+										                	<th>
+																<label>
+																	<input type="checkbox" class="ace" />
+																	<div class="lbl"></div>
+																</label>
+															</th>
+										                    <th>姓名</th>
+															<th>年龄</th>
+															<th>手机</th>
+															<th>生日</th>
+															<th>QQ</th>
+															<th>邮箱</th>
+															<th>操作</th>
+										                </tr>
+										            </thead>
+										            <tbody>
+										                
+										            </tbody>
+										        </table>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="table/js/jquery.dataTables_cn.js"></script>
+		<script src="js/public.js"></script>
+		<script src="table/js/table.js"></script>
+		<script src="table/js/table_dataTable.js"></script>
+		<script>
+			$(function(){
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				//setTimeout(0)表示尽快进行，但是因为ajax加载需要时间，所有需要延时。比较老的浏览器大概需要 16ms 后才能执行，现在的 Chrome 浏览器之类的可以在 4ms 甚至更短的时间后执行。
+				
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("table","Simple");//引入左侧导航
+				
+				//simple table简单表格数据显示
+				getSimpleTable();
+				
+				
+				/*
+				 * DataTable部分
+				 */
+				//datatables数据显示
+				var shownum = $("#showRecords option:selected").val();//获取默认初始显示的数值
+				getdataTable(shownum);
+				
+				//根据select每页控制显示的个数
+				$("#showRecords").on("change",function(){
+					$(this).each(function(){
+						shownum = $("#showRecords option:selected").val();
+						getdataTable(shownum);
+						sidebarHeight();
+					});
+				});
+				
+				//复选框选择
+				$("#dataTable>thead label>input").on("click",function(){
+					var that = this;
+					$(this).closest('table').find('tbody label>input').each(function(i,e){
+						this.checked = that.checked;				
+					})
+				});
+				
+				$("#dataTable>tbody").on("change","label>input:checkbox",function(e){
+					var checklist = $("#dataTable>tbody").find("label>input:checkbox").length;
+					$(this).closest('table').find('tbody label>input:checkbox').each(function(i,k){
+						if($("#dataTable>tbody label>input:checked").size() == checklist){
+							$("#dataTable>thead label>input").prop("checked",true);
+						}else{
+							$("#dataTable>thead label>input").prop("checked",false);
+						}
+					});
+					
+				})
+				
+				
+				
+				
+				
+				
+			})
+		</script>
+	</body>
+</html>

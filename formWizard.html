@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Form Wizard</title>
+		<!--<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />-->
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="form/css/formWizard.css" />		
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">Form</li>
+							<li class="active">Form Wizard</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="title">
+									<i class="fa fa-file-text-o"></i>
+									<span class="fF lighter">Form Wizard 项目向导图</span>
+								</div>
+								<div class="formWizardBox umar-t">
+									<div class="formWizardHeader">
+										<div class="fwTitle">Form Wizard</div>
+										<!--<label  class="fwRadio">
+											<input type="radio" name="formWizardRadio" class="ace" />
+											<span class="lbl">切换</span>
+										</label>-->
+									</div>
+									<div class="formWizardBody">
+										<div class="formWizardStep">
+											<ul class="stepBox">
+												<li data-step="1" class="active">
+													<span class="step">1</span>
+													<span class="stepTitle">步骤一</span>
+												</li>
+												<li data-step="2">
+													<span class="step">2</span>
+													<span class="stepTitle">步骤二</span>
+												</li>
+												<li data-step="3">
+													<span class="step">3</span>
+													<span class="stepTitle">步骤三</span>
+												</li>
+												<li data-step="4">
+													<span class="step">4</span>
+													<span class="stepTitle">步骤四</span>
+												</li>
+											</ul>
+										</div>
+										<hr>
+										<div class="formWizardMain">
+											<div class="stepPane active" data-step="1">
+												<div class="stepPaneTitle">请填写下面的表单内容</div>
+												<form class="form-horizontal" role="form" id="">
+													<div class="form-group">
+														<label class="col-xs-3 control-label">表单一：</label>
+														<div class="col-xs-6">
+															<input type="text" placeholder="" class="col-xs-12 form-control" />
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-3 control-label">表单二：</label>
+														<div class="col-xs-6 errorBorder">
+															<input type="text" placeholder="" class="col-xs-12 form-control" />
+														</div>
+														<div class="col-xs-3 errorBox">
+															<i class="fa fa-close formError"></i>
+															<span class="errorText">输入的内容不正确</span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-3 control-label">表单三：</label>
+														<div class="col-xs-6 successBorder">
+															<input type="text" placeholder="" class="col-xs-12 form-control" />
+														</div>
+														<div class="col-xs-3 successBox">
+															<i class="fa fa-check formSuccess"></i>
+															<span class="successText">验证正确</span>
+														</div>
+													</div>
+													<div class="form-group">
+														<label class="col-xs-3 control-label">表单三：</label>
+														<div class="col-xs-6 warningBorder">
+															<input type="text" placeholder="" class="col-xs-12 form-control" />
+														</div>
+														<div class="col-xs-3 warningBox">
+															<i class="fa fa-warning formwarning"></i>
+															<span class="warningText">警告</span>
+														</div>
+													</div>
+												</form>
+												
+											</div>
+											<div class="stepPane" data-step="2">
+												<div class="stepPaneText">这是第二步显示的内容...</div>
+											</div>
+											<div class="stepPane" data-step="3">
+												<div class="stepPaneText">这是第三步显示的内容...</div>
+											</div>
+											<div class="stepPane" data-step="4">
+												<div class="stepPaneText">这是第四步显示的内容...</div>
+											</div>
+										</div>
+										<hr>
+										<div class="formWizardActions">
+											<div class="formWizardBtn previous">
+												<i class="fa fa-angle-double-left"></i>
+												<span class="">上一步</span>
+											</div>
+											<div class="formWizardBtn next clickable">
+												<span class="">下一步</span>
+												<i class="fa fa-angle-double-right"></i>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="form/js/formWizard.js"></script>
+		<script>
+			$(function(){	
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("form","formWizard");//引入左侧导航
+				
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				
+			})
+		</script>
+	</body>
+</html>

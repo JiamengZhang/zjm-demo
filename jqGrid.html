@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>jqGrid</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<!--<link rel="stylesheet" type="text/css" href="table/css/table.css" />-->
+		<link rel="stylesheet" type="text/css" href="table/css/ui.jqgrid.css" />
+		<link rel="stylesheet" type="text/css" href="form/css/pop.css" />
+		<link rel="stylesheet" type="text/css" href="table/css/jqgrid.css" />
+		
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">table</li>
+							<li class="active">jqGrid</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="title jqgridTitle">
+									<i class="fa fa-table"></i>
+									<span class="fF lighter">Jquery grid表格制作</span>
+								</div>
+								<div class="jqgridContainer umar-t">
+									<!--grid表格-->
+									<table id="grid-table"></table>
+									<!--grid分页-->
+									<div id="grid-pager"></div>
+								</div>
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<!--添加参数设置弹窗-->
+		<div class="window-edit-parameter">
+			<div class="window boxR bs">
+				<button class="fa fa-remove tra-fast btn-close"></button>
+				<div class="title">
+					组件展示预览
+				</div>
+				<div class="tableadd">			
+					<!--<table class="infroshow infrochange">
+						<tbody>
+							<tr>
+								<td class="tr" width="25%">姓名：</td>
+								<td width="25%"><input class="form-control" type="text" value="Andy" /></td>
+								<td class="tr" width="25%">年龄：</td>
+								<td width="25%"><input class="form-control" type="text" value="23" /></td>
+							</tr>
+							<tr>
+								<td class="tr" width="25%">手机号码：</td>
+								<td width="25%"><input class="form-control" type="text" value="13532327189" /></td>
+								<td class="tr" width="25%">生日：</td>
+								<td width="25%"><input class="form-control" type="text" value="1992-12-12" /></td>
+							</tr>
+							<tr>
+								<td class="tr" width="25%">QQ：</td>
+								<td width="25%"><input class="form-control" type="text" value="871096972" /></td>
+								<td class="tr" width="25%">邮箱：</td>
+								<td width="25%"><input class="form-control" type="text" value="871096972@qq.com" /></td>
+							</tr>
+						</tbody>
+					</table>
+					<div class="btnbox">
+						<button class="popbtn">确定</button><button class="popbtn">取消</button>
+					</div>-->
+				</div>			
+			</div>
+		</div>
+		<!--修改参数设置弹窗end-->
+		
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="table/js/jqgrid/jquery.jqGrid.min.js"></script>
+		<!--<script src="table/js/jquery.jqGrid.src.js"></script>	-->	
+		<script src="table/js/jqgrid/i18n/grid.locale-en.js"></script>
+		<script src="js/public.js"></script>
+		<script src="table/js/table_jqgrid.js"></script>
+		<script src="form/js/pop.js"></script>
+		<script>
+			$(function(){
+				$(".window-edit-parameter").on("click",".btn-yes",function(){//创建
+					windowHide($(".window-edit-parameter"));
+				});
+				$(".window-edit-parameter").on("click",".btn-cancle",function(){//取消
+					windowHide($(".window-edit-parameter"));
+				});
+				
+			
+			
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("table","jqGrid");//引入左侧导航
+			})
+		</script>
+	</body>
+</html>

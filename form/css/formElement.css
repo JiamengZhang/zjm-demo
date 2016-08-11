@@ -1,0 +1,39 @@
+.module{ font-size: 14px; margin-top: 2em;}
+.module label{ font-weight: normal;}
+
+/*.module .form-group label{ width: 10em;}*/
+			
+.module .radio,
+.module .checkbox{ display: inline-block; min-width: 100px;}
+
+.module .form-group textarea{ min-height: 100px;}
+
+.module .form-actions { margin-top: 30px;}
+	.module .form-actions .form-btn{ border: none; border-radius: .5em; display: inline-block; color: white; cursor: pointer; vertical-align: middle; width: 80px; height: 32px; text-align: center; line-height: 32px; margin-right: 2em;}
+	.module .form-actions .formDel{ background-color: #b1b1b1;}
+	.module .form-actions .formPreview{ background-color: #CB2927;}
+	.module .form-actions .formSave{ background-color: #2B78E4;}
+
+.module .btnBox{ text-align: center;}
+.module .btnBox > .form-btn:last-child{ margin-right: 0;}
+
+
+/* form表单中的表格数据样式 */
+.tableBox { background-color: #F1F1F1; border-bottom: solid 1px #e1e1e1;}
+.tableBox .table{ margin-bottom: 0;}
+			
+.tableBox .tableTitle{ padding-right: 17px; }
+	.tableBox .table>thead{ border: solid 1px #e1e1e1; border-right-width: 0; border-bottom-width: 0;}
+		.tableBox .table>thead>tr>th{ border-bottom: none; text-align: center; background-color: #F1F1F1; border-right: solid 1px #e1e1e1; width: 40px;}
+		.tableBox .table>thead>tr>th:nth-child(4){ width: 60px;}
+			
+.tableBox .tableBody{ max-height: 181px; overflow-y: auto; background-color: white;}
+	.tableBox .table>tbody{border: solid 1px #e1e1e1; border-right-width: 0;}
+		.tableBox .table>tbody>tr{ height: 36px;}
+			.tableBox .table>tbody>tr>td{ width: 40px; border-right: solid 1px #e1e1e1; line-height: 22px; padding: 4px; vertical-align: middle;}
+			.tableBox .table>tbody>tr>td:nth-child(4){ width: 60px; text-align: center;}
+			.tableBox .table>tbody>tr>td:nth-child(5){ text-align: center;}
+			.tableBox .table>tbody>tr input[type=text]{ width: 100%; height: 24px; padding: 2px 4px;}
+
+
+
