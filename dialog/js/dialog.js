@@ -1,7 +1,7 @@
 (function(n){
-	function e(r){
-		r != undefined && r != null && (t = n.extend({}, r));
-	}
+//	function e(r){
+//	    r != undefined && r != null && (t = n.extend({}, r));
+//	}
 	
 	function r(r) {
 		var t = {
@@ -11,12 +11,12 @@
 			AlertImg: 'dialog/img/alert.png'
 		};
 		
-		for(var i in r){
-			t[i] = r[i];
-		}
+//		for(var i in r){
+//			t[i] = r[i];
+//		}
 		
-		var v;
-		e(r);
+//		var v;
+//		e(r);
 		
 		var h = n(window).width(),
 			c = n(window).height(),
