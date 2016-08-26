@@ -1,0 +1,28 @@
+body{ position: relative;}
+#Dialog{
+	position: absolute;
+	background-color: #181818;
+	opacity: .8;
+	border-radius: .5em;
+	padding: 15px;
+}
+#Dialog #AlertImg img{
+	width: 50px;
+	height: 50px;
+	display: block;
+	margin: 0 auto 10px auto;
+}
+/*#Dialog #AlertImg:before{
+	content: "\f05d";
+	display: block;
+	font-size: 40px;
+	font-family: fontAwesome;
+	font-weight: lighter;
+	color: white;
+	text-align: center;
+}*/
+#Dialog #TipLine{
+	color: white;
+	text-align: center;
+	line-height: 20px;
+}

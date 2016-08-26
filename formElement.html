@@ -8,7 +8,8 @@
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="form/css/formElement.css" />
-		<link rel="stylesheet" type="text/css" href="form/css/pop.css" />
+		<link rel="stylesheet" type="text/css" href="pop/css/pop.css" />
+		<link rel="stylesheet" type="text/css" href="dialog/css/dialog.css" />
 	</head>
 	<body>
 		<!--头部-->
@@ -295,8 +296,9 @@
 		<script src="js/jquery-2.1.4.min.js"></script>
 		<script src="bootstrap/js/bootstrap.min.js"></script>
 		<script src="js/public.js"></script>
-		<script src="form/js/pop.js"></script>
+		<script src="pop/js/pop.js"></script>
 		<script src="form/js/form.js"></script>
+		<script src="dialog/js/dialog.js"></script>
 		<script>
 			$(function(){	
 				$(".window-edit-parameter").on("click",".btn-yes",function(){//创建
@@ -317,6 +319,12 @@
 					sidebarHeight();//控制侧导航的高度
 				},0);
 				
+				$(".formSave").click(function(){
+					$.Dialog.Alert({ Width: 150, Height: 106, Content: '保存成功'});
+					setTimeout(function(){
+						$("#Dialog").remove();
+					},1000)
+				})
 			})
 		</script>
 	</body>
