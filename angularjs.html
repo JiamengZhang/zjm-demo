@@ -8,9 +8,7 @@
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="angularjs/css/angular.css" />
-		<script src="js/jquery-2.1.4.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
-		<script src="angularjs/js/angular.min.js"></script>
+		<link rel="stylesheet" type="text/css" href="dialog/css/dialog.css" />
 		
 	</head>
 	<body>
@@ -152,10 +150,10 @@
 														<th>{{x.QQ}}</th>
 														<th>{{x.email}}</th>
 														<th>
-															<span class="table-icon bg-delete">
+															<span class="table-icon bg-delete" ng-click="delete()">
 																<i class="fa fa-trash"></i>
 															</span>
-															<span class="table-icon bg-edit">
+															<span class="table-icon bg-edit" ng-click="edit()">
 																<i class="fa fa-edit"></i>
 															</span>													
 														</th>
@@ -178,7 +176,11 @@
 				</div>
 			</div>
 		</div>
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="angularjs/js/angular.min.js"></script>
 		<script type="text/javascript" src="js/public.js"></script>
+		<script src="dialog/js/dialog.js"></script>
 		<script type="text/javascript" src="angularjs/js/angularModule.js"></script>
 		<script type="text/javascript">
 			$(function(){

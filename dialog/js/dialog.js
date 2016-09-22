@@ -11,9 +11,9 @@
 			AlertImg: 'dialog/img/alert.png'
 		};
 		
-//		for(var i in r){
-//			t[i] = r[i];
-//		}
+		for(var i in r){
+			t[i] = r[i];
+		}
 		
 //		var v;
 //		e(r);

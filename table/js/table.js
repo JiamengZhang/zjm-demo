@@ -47,6 +47,14 @@ function getSimpleTable(){
 	});
 }
 
+$("#simpleTable>tbody").on("click",".bg-delete",function(){
+	var index = $(this).parents('tr').index();
+	$(this).parents('tbody').children('tr').eq(index).remove();
+})
+
+$("#simpleTable>tbody").on("click",".bg-edit",function(){
+	//alert('点击编辑');
+})
 
 /*
  * jquery dataTables表格数据显示
@@ -97,6 +105,5 @@ function getdataTable(num){
 		}
 	});
 }
-
 
 
