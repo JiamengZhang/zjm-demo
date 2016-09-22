@@ -1,0 +1,70 @@
+.angularBox .angularContent .inputbox{ display: inline-block; height: 34px; line-height: 34px; border-radius: 4px; border: solid 1px #CCCCCC; background-color: #FFFFFF; padding: 6px 12px;}
+.angularBox .angularContent .subtitle{ font-size: 16px; color: #666666; font-weight: bold; line-height: 30px; padding-left: 10px;}
+.angularBox .angularContent i{ display: inline-block; font-style: normal; width: 60px;}
+
+.angularBox .angularContent .shownamebox b{ padding-left: 10px; font-weight: normal;}
+
+.angularBox .angularContent .shownamebox .btn{ border: solid 1px #CCCCCC; padding: .5em 1em; background-color: #E5E5E5; color: #333333; margin-left: 60px;}
+.angularBox .angularContent .shownamebox input.btn:disabled{ color: #999999;}
+
+
+
+.angularBox .table{
+	border: solid 1px #e1e1e1;
+}
+.angularBox .table > thead{
+	background-color: #F1F1F1;
+}
+.angularBox .table>thead>tr>th{
+	border: none;
+}
+.angularBox .table>thead>tr>th,
+.angularBox .table>tbody>tr>th{
+	border-left: solid 1px #e1e1e1;
+	text-align: center;
+	font-size: 14px;
+	line-height: 24px;
+}
+.angularBox .table>thead>tr>th:first-child,
+.angularBox .table>tbody>tr>th:first-child{
+	width: 40px;
+}
+/*.SimpleTable .table>tbody>tr>th:last-child{
+	text-align: left;
+}*/
+.angularBox .table>thead>tr>th{	
+	font-weight: bold;
+}
+.angularBox .table>tbody>tr>th{	
+	font-family: "宋体";
+}
+
+
+.angularBox .table >tbody >tr:nth-child(even){
+	background-color: #f9f9f9;
+}
+
+
+.angularBox .table .table-icon{
+	cursor: pointer;
+	color: white;
+	width: 32px;
+	height: 24px;
+	display: inline-block;
+	border-radius: .2em;
+}
+.angularBox .table .table-icon > i{
+	font-size: 16px;
+	vertical-align: middle;	
+}
+.angularBox .table .table-icon.bg-delete{
+	margin-right: 10px;
+}
+.angularBox .table .table-icon.bg-delete>i{
+	margin-left: -1px;
+	margin-top: -1px;
+}
+.angularBox .table .table-icon.bg-edit>i{
+	margin-top: 0px;
+	margin-left: 1px;
+}

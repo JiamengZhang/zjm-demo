@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>angularjs模块</title>
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" type="text/css" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="angularjs/css/angular.css" />
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="angularjs/js/angular.min.js"></script>
+		
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">AngularJS</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content angularBox"  ng-app="module">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<div class="row">
+									<div class="col-xs-12">
+										<div>
+											<div class="title">
+												<i class="fa fa-adn"></i>
+												<span class="fF lighter">AngularJS简单实例一</span>
+											</div>
+											<div class="angularContent umar-t">
+												<div class="row">
+													<div class="col-xs-4">
+														<div ng-controller="showname">
+															<div class="subtitle">姓名显示</div>
+															<div class="umar-t">
+																<div>
+																	<input ng-model="firstname" class="inputbox" type="text" placeholder="姓" />
+																</div>
+																<div>
+																	<input ng-model="secondname" type="text" class="inputbox umar-t" placeholder="名" />
+																</div>
+																
+															</div>
+															<div class="shownamebox umar-t">
+																<span>
+																	<i>姓名:</i>
+																	<b>{{firstname+secondname}}</b>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-4">
+														<div ng-controller="showprice">
+															<div class="subtitle">计算器</div>
+															<div class="umar-t">
+																<div>
+																	<i>价格：</i><input ng-model="price" class="inputbox" type="number" placeholder="" />
+																</div>
+																<div>
+																	<i>数量：</i><input ng-model="num" class="inputbox umar-t" type="number" placeholder="" />
+																</div>
+															</div>
+															<div class="shownamebox umar-t">
+																<span>
+																	<i>总价:</i>
+																	<b>{{num*price}}</b>
+																</span>
+															</div>
+														</div>
+													</div>
+													<div class="col-xs-4">
+														<form ng-controller="validate" name="validate" novalidate>
+															<div class="subtitle">邮箱验证</div>
+															<div class="umar-t">
+																<div>
+																	<i>用户名：</i><input ng-model="user" name="user" class="inputbox" type="text" required />
+																	<span ng-show="validate.user.$dirty || validate.user.$invalid">
+																		<span ng-show="validate.user.$error.required">请填写用户名</span>
+																	</span>
+																</div>
+																<div>
+																	<i>邮箱：</i><input ng-model="email" name="email" class="inputbox umar-t" type="text" required />
+																	<span ng-show="validate.email.$dirty || validate.email.$invalid">
+																		<span ng-show="validate.email.$error.required">请输入邮箱</span>
+																		<span ng-show="validate.email.$valid">邮箱不正确</span>
+																	</span>
+																</div>
+															</div>
+															<div class="shownamebox umar-t">
+																<input class="btn" type="submit" ng-disabled="validate.user.$dirty || validate.user.$invalid || validate.email.$dirty || validate.email.$invalid" />
+															</div>
+														</form>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-xs-12">
+										<div>
+											<div class="title">
+												<i class="fa fa-adn"></i>
+												<span class="fF lighter">AngularJS简单实例二</span>
+											</div>
+											<table class="table umar-t" ng-controller="table">
+												<thead>
+													<tr>
+														<th></th>
+														<th>姓名</th>
+														<th>年龄</th>
+														<th>手机</th>
+														<th>生日</th>
+														<th>QQ</th>
+														<th>邮件</th>
+														<th>操作</th>
+													</tr>
+												</thead>
+												<tbody>
+													<tr ng-repeat="x in tabledata">
+														<th>{{$index + 1}}</th>
+														<th>{{x.name}}</th>
+														<th>{{x.age}}</th>
+														<th>{{x.tel}}</th>
+														<th>{{x.birth}}</th>
+														<th>{{x.QQ}}</th>
+														<th>{{x.email}}</th>
+														<th>
+															<span class="table-icon bg-delete">
+																<i class="fa fa-trash"></i>
+															</span>
+															<span class="table-icon bg-edit">
+																<i class="fa fa-edit"></i>
+															</span>													
+														</th>
+													</tr>
+												</tbody>
+											</table>
+										</div>
+										
+										
+									</div>
+								</div>
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" src="js/public.js"></script>
+		<script type="text/javascript" src="angularjs/js/angularModule.js"></script>
+		<script type="text/javascript">
+			$(function(){
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("AngularJs",0);//引入左侧导航
+			})
+			
+			
+		</script>
+	</body>
+</html>
