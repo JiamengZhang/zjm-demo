@@ -8,17 +8,17 @@
 		<link rel="stylesheet" type="text/css" href="css/public.css" />
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 		<link rel="stylesheet" type="text/css" href="angularjs/css/angular.css" />
-		<link rel="stylesheet" type="text/css" href="dialog/css/dialog.css" />
-		
+		<link rel="stylesheet" type="text/css" href="dialog/css/dialog.css" />		
 	</head>
-	<body>
+	<body ng-app="module">
 		<!--头部-->
-		<div id="topNav" class="topNav"></div>
+		<!--使用了ng-include包含-->
+		<div id="topNav" class="topNav" ng-include="'_topbar.html'"></div>
 		
 		<!--中间内容-->
 		<div class="main-container">
 			<!--sidebar-->
-			<div class="sidebar" id="sidebar"></div>
+			<div class="sidebar" id="sidebar" ng-include="'_sidebar.html'"></div>
 			<div class="main-content">
 				<div class="main-content-inner">
 					<div class="contentTop">
@@ -40,7 +40,7 @@
 						
 					</div>
 				</div>
-				<div class="page-content angularBox"  ng-app="module">
+				<div class="page-content angularBox">
 					<div class="container">
 						<div class="row">
 							<div class="col-xs-12">
@@ -186,10 +186,19 @@
 			$(function(){
 				setTimeout(function(){
 					sidebarHeight();//控制侧导航的高度
+					
+					//侧导航显示当前状态
+					$("#sidebar .nav > li").each(function(){
+						var self = this;
+						var selfhtml = $(self).attr('data-html');
+						if(selfhtml == "AngularJs"){
+							$('#sidebar .nav > li').removeClass("active");
+							$(self).addClass("active");
+						}
+					});
 				},0);
+
 				
-				getTopbarHtml();//引入顶部
-				getSidebarHtml("AngularJs",0);//引入左侧导航
 			})
 			
 			
