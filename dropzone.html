@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Markdown Editor</title>
+		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
+		<link rel="stylesheet" href="bootstrap/css/font-awesome.css" />
+		<link rel="stylesheet" type="text/css" href="css/public.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+		<link rel="stylesheet" type="text/css" href="dropzone/css/dropzone.css" />	
+		<link rel="stylesheet" type="text/css" href="dropzone/css/main.css" />
+	</head>
+	<body>
+		<!--头部-->
+		<div id="topNav" class="topNav"></div>
+		
+		<!--中间内容-->
+		<div class="main-container">
+			<!--sidebar-->
+			<div class="sidebar" id="sidebar"></div>
+			<!--主体内容-->
+			<div class="main-content">
+				<div class="main-content-inner">
+					<div class="contentTop">
+						<ul class="topNavTitle">
+							<li>
+								<i class="nav-icon fa fa-home"></i>
+								<a href="index.html"><span>Home</span></a>
+							</li>
+							<li class="active">Form</li>
+							<li class="active">Dropzone</li>
+						</ul>
+						<div class="nav-search">
+							<form class="form-search">
+								<span class="nav-search-inner">
+									<i class="search_icon fa fa-search"></i>
+									<input placeholder="搜索..." />
+								</span>
+							</form>
+						</div>
+						
+					</div>
+				</div>
+				<div class="page-content">
+					<div class="container">
+						<div class="row">
+							<div class="col-xs-12">
+								<!--dropzone content-->
+								<div class="mar-t">
+									<form action="dummy.html" class="dropzone" id="dropzone">
+										<div class="fallback">
+											<input name="file" type="file" multiple="" />
+										</div>
+									</form>
+								</div><!--dropzone content end-->
+								<div id="footer" class="footer">
+									<span class="footerText pull-right">zjm713830@sina.cn</span>
+									<span class="footerText pull-right">JiaMeng.Zhang</span>									
+								</div>
+							</div>
+						</div>						
+					</div>
+					
+				</div>
+			</div>
+		</div>
+		
+		
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="js/public.js"></script>
+		<script src="dropzone/js/dropzone.js"></script>
+		<script>
+			$(function(){	
+				getTopbarHtml();//引入顶部
+				getSidebarHtml("form","dropzone");//引入左侧导航
+				
+				setTimeout(function(){
+					sidebarHeight();//控制侧导航的高度
+				},0);
+				
+				try {
+			  		Dropzone.autoDiscover = false;
+			  		var myDropzone = new Dropzone("#dropzone" , {
+					    paramName: "file", // The name that will be used to transfer the file
+					    maxFilesize: 0.5, // MB
+					
+						addRemoveLinks : true,
+						dictDefaultMessage :
+							'<span class="bigger-150 bolder"><i class="ace-icon fa fa-caret-right red"></i> Drop files</span> to upload \ <span class="smaller-80 grey">(or click)</span> <br /> \ <i class="upload-icon ace-icon fa fa-cloud-upload blue fa-3x"></i>',
+						dictResponseError: 'Error while uploading file!',
+					
+						//change the previewTemplate to use Bootstrap progress bars
+						previewTemplate: "<div class=\"dz-preview dz-file-preview\"><div class=\"dz-details\"><div class=\"dz-filename\"><span data-dz-name></span></div><div class=\"dz-size\" data-dz-size></div><img data-dz-thumbnail /></div><div class=\"progress progress-small progress-striped active\"><div class=\"progress-bar progress-bar-success\" data-dz-uploadprogress></div></div><div class=\"dz-success-mark\"><span></span></div><div class=\"dz-error-mark\"><span></span></div><div class=\"dz-error-message\"><span data-dz-errormessage></span></div></div>"
+			  		});
+			  
+			   		$(document).one('ajaxloadstart.page', function(e) {
+						try {
+							myDropzone.destroy();
+						} catch(e) {}
+			   		});
+			
+				} catch(e) {
+			  		alert('Dropzone.js does not support older browsers!');
+				}
+			})
+		</script>
+	</body>
+</html>

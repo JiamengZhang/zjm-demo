@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+	</head>
+	<body>
+		<script>
+			var data = {"value": [
+			            {
+			                "0": [
+			                    "0",
+			                    "0",
+			                    "1"
+			                ]
+			            },
+			            {
+			                "1": [
+			                    "0",
+			                    "3",
+			                    "1"
+			                ]
+			            },
+			            {
+			                "2": [
+			                    "0",
+			                    "0",
+			                    "3"
+			                ]
+			            }
+        		]};
+        	
+        	var msg = data.value;
+        	console.log(JSON.stringify(msg));
+        	var list = [];
+        	for(var i = 0; i<msg.length; i++){
+        		console.log(JSON.stringify(msg[i]));
+        		list.push(msg[i]);
+        	}
+        	console.log(JSON.stringify(list));
+		</script>
+	</body>
+</html>
