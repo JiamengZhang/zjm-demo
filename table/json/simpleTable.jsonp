@@ -1,0 +1,52 @@
+flightHandler({
+	"results":[{
+		"name": "Andy",
+		"age": "23",
+		"tel": "15052126591",
+		"birth": "93.08.30",
+		"QQ": "871096972",
+		"email": "zjm713830@sina.cn"
+	},{
+		"name": "Nana",
+		"age": "24",
+		"tel": "15052126591",
+		"birth": "93.08.29",
+		"QQ": "871096972",
+		"email": "zjm713830@sina.cn"
+	},{
+		"name": "Hebe",
+		"age": "24",
+		"tel": "15052126591",
+		"birth": "93.08.29",
+		"QQ": "871096972",
+		"email": "zjm713830@sina.cn"
+	},{
+		"name": "Salina",
+		"age": "24",
+		"tel": "15052126591",
+		"birth": "93.08.29",
+		"QQ": "871096972",
+		"email": "zjm713830@sina.cn"
+	},{
+		"name": "Nana",
+		"age": "24",
+		"tel": "15052126591",
+		"birth": "93.08.29",
+		"QQ": "871096972",
+		"email": "zjm713830@sina.cn"
+	},{
+		"name": "Nana",
+		"age": "24",
+		"tel": "15052126591",
+		"birth": "93.08.29",
+		"QQ": "871096972",
+		"email": "zjm713830@sina.cn"
+	},{
+		"name": "Nana",
+		"age": "24",
+		"tel": "15052126591",
+		"birth": "93.08.29",
+		"QQ": "871096972",
+		"email": "zjm713830@sina.cn"
+	}]
+})
