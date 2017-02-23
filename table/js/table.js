@@ -7,10 +7,56 @@
 /*
  * simple table简单表格数据显示
  */
+//function getSimpleTable(){
+//	$.ajax({
+//		type: "get",
+//		url: interfaces.getSimpleTable,
+//		success: function(data) {
+//			console.log("表格的数据："+JSON.stringify(data));
+//			$("#simpleTable>tbody").html("");//将表格数据清空
+//			var simpleTable = '';
+//			var msg = data.results;
+//			for(var i = 0; i<msg.length; i++){
+//				var num = i+1; 
+//				var name = msg[i].name;//姓名
+//				var age = msg[i].age;//年龄
+//				var tel = msg[i].tel;//电话
+//				var birth = msg[i].birth;//生日
+//				var QQ = msg[i].QQ;//QQ
+//				var email = msg[i].email;//邮件
+//				simpleTable +='<tr>'
+//							+ '<th>'+num+'</th>'
+//							+ '<th>'+name+'</th>'
+//							+ '<th>'+age+'</th>'
+//							+ '<th>'+tel+'</th>'
+//							+ '<th>'+birth+'</th>'
+//							+ '<th>'+QQ+'</th>'
+//							+ '<th>'+email+'</th>'
+//							+ '<th>'
+//							+ '<span class="table-icon bg-delete">'
+//							+ '<i class="fa fa-trash"></i>'
+//							+ '</span>'
+//							+ '<span class="table-icon bg-edit">'
+//							+ '<i class="fa fa-edit"></i>'
+//							+ '</span>'												
+//							+ '</th>'
+//							+ '</tr>';
+//			}
+//			$("#simpleTable>tbody").append(simpleTable);
+//		}
+//	});
+//}
+/*
+ * 使用jsonp方式
+ */
 function getSimpleTable(){
 	$.ajax({
 		type: "get",
-		url: interfaces.getSimpleTable,
+		async: false,
+		url: interfaces.getSimpleTableJsonp,
+		dataType: 'jsonp',
+		jsonp: "callback",
+		jsonpCallback:"flightHandler",
 		success: function(data) {
 			console.log("表格的数据："+JSON.stringify(data));
 			$("#simpleTable>tbody").html("");//将表格数据清空

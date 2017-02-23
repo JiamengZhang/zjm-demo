@@ -13,6 +13,9 @@ var interfaces = {};
 	//获取table数据
 	interfaces.getSimpleTable = 'table/json/simpleTable.json';
 	
+	//获取table数据jsonp
+	interfaces.getSimpleTableJsonp = 'table/json/simpleTable.jsonp';
+	
 })(interfaces)
 
 /* 
